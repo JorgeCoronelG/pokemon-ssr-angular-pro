@@ -15,10 +15,7 @@ export const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: () => {
-      // const authService = inject(AuthService);
-
-      return 'about';
-    },
+    redirectTo: 'about',
+    pathMatch: 'full'
   }
 ];
